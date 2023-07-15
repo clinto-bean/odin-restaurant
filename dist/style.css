@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@100;400;600;700&display=swap");
+
+:root {
+  --green: hsl(76, 57%, 61%);
+  --lightgreen: hsl(70, 47%, 81%);
+  --tan: hsl(48, 50%, 88%);
+  --brown: hsl(26, 28%, 53%);
+  --darkbrown: hsl(23, 17%, 36%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--darkbrown);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsla(23, 57%, 16%, 0.8);
+  padding: 1rem;
+  width: 100dvw;
+  position: fixed;
+  border-radius: 0 0 2rem 0;
+  top: 0;
+  z-index: 100;
+}
+
+#navSearch {
+  all: unset;
+  background-image: url("../src/images/search.svg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#logo {
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  height: 40px;
+  width: 40px;
+}
+
+#logo img,
+#searchform button {
+  filter: invert();
+}
+
+.navHead {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--tan);
+  letter-spacing: 3px;
+}
+
+#navlist {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  max-width: 33.3333%;
+  position: absolute;
+  right: 2rem;
+}
+
+#navlist li {
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: var(--tan);
+}
+
+#navlist li:hover,
+navlist li:active {
+  background: hsl(76, 57%, 61%);
+  color: var(--darkbrown);
+}
+
+#navlist li a {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#searchform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 33.3333%;
+  position: absolute;
+  left: 2rem;
+}
+
+#searchform input {
+  padding: 1rem;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--darkbrown);
+  width: 30ch;
+  font-size: 20px;
+  box-shadow: -1px 2px 2px var(--brown);
+  background: var(--tan);
+  color: red;
+  font-weight: 600;
+}
+
+#hero {
+  background-image: url("../src/images/the-restaurant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#heroContent {
+  width: 50%;
+  height: 50%;
+  background: hsla(23, 57%, 16%, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid hsla(23, 57%, 16%, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+#menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: hsl(48, 50%, 88%, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+}
